@@ -1,0 +1,25 @@
+
+<h1 class="text-center display-4">Available jobs for you:</h1>
+<div class="jumbotron container" style="display: flex; flex-wrap: wrap; justify-content: space-evenly;">
+  <div class="card" id="x" *ngFor="let data of TestData">
+      <div class="card-body">
+      <img [src]="data.company_logo" width="20%" height="100px" alt="image not found">
+        <h4 class="card-title text-warning">Company:{{data.company}}</h4>
+        <h4 class="card-title text-info">Title:{{data.title}}</h4>
+        <button class="btn btn-success" (click)="clickhere(data.id)">View Details</button>
+      </div>
+  </div>
+</div>
+
+
+
+
+   
+
+
+
+    
+
+
+
+
